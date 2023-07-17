@@ -14,6 +14,7 @@ export default function App() {
     const feedbackName = e.target.name;
     setStates(prevState => {
       return {
+        ...prevState,
         [feedbackName]: prevState[feedbackName] + 1,
       };
     });
